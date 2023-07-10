@@ -1,0 +1,168 @@
+version: '3.1'
+intents:
+- deny
+- affirm
+- faq
+- help
+- out_of_scope
+- bot_challenge
+- human_handoff
+- insults
+
+session_config:
+  session_expiration_time: 5
+  carry_over_slots_to_new_session: false
+
+responses:
+  utter_submit:
+  - text: Verstanden!
+  utter_out_of_scope:
+  - text: 'Tut mir leid, das kann ich leider nicht beantworten. Benutzen Sie gerne unser Kontaktformular, um Ihre Frage zu stellen oder tippen Sie "Hilfe". ' 
+  utter_have_a_nice_day:
+  - text: Habn Sie noch einen schönen Tag und bis bald!
+  utter_bye:
+  - text: Auf Wiedersehen!
+  utter_more_info:
+  - text: Okay. Wie kann ich Ihnen weiterhelfen?
+  utter_anything_else:
+  - text: Kann ich Ihnen noch mit etwas anderem behilflich sein?
+    buttons:
+    - title: "Ja"
+      payload: "/affirm"
+    - title: "Nein"
+      payload: "/deny"
+  utter_help:
+  - text: Ich helfe Ihnen gerne bei technischen Problemen und Fragen zu den Kursen. Ich erkläre Ihnen zum Beispiel den Kursaufbau und beantworte Fragen zum Zertifikat, zum Zurücksetzen des Passworts oder zum Ändern Ihrer persönlichen Daten. 
+  utter_default:
+  - text: Das habe ich nicht ganz verstanden. Könnten Sie das umformulieren?
+  utter_iamabot:
+  - text: Ich bin Ihr virtueller Assistent. 
+  utter_ask_handoff:
+  - text: Wollen Sie lieber mit unserem Helpdesk-Team sprechen?
+    buttons:
+    - title: "Ja"
+      payload: "/affirm"
+    - title: "Nein"
+      payload: "/deny"
+  utter_handoff:
+  - text: 'Um mit unserem Helpdesk-Team zu sprechen, klicken Sie auf den Reiter "Kontaktformular" und beschreiben Sie uns Ihr Anliegen dort kurz. Das Helpdesk-Team wird sich zeitnah bei Ihnen melden.'
+  utter_insults:
+  - text: "Bitte achten Sie etwas besser auf Ihre Wortwahl! Ich bin zwar nur eine Maschine, aber ich habe auch Gefühle!!"
+  utter_feedback:
+  - text: "Hab ich Ihnen bei Ihrem Anliegen helfen können?"
+    buttons:
+    - title: "Ja"
+      payload: "/affirm"
+    - title: "Nein"
+      payload: "/deny"
+  utter_thankyou_feedback:
+  - text: "Vielen Dank für Ihr Feedback!"
+  utter_faq/which_services:
+  - text: "<ul>
+  <li>Erstellung/Aktualisierung einer durch Begrüßungstext, Logo und Bild individualisierten Landingpage für Ihr Personal mit den von Ihnen ausgewählten Lerneinheiten.</li>
+  <li>Zugriff auf das gesamte Kursprogramm (On-Demand und Hybrid); Ausschreibungsproblematik entfällt </li>
+  <li>Zugriff insbesondere auch auf unsere On-Demand-Lerneinheiten für den Migrationsbereich</li>
+  <li>Inkludierte kostenfreie Veranstaltungen/Leistungen wie z.B. Newsletter, Rathausdialog, Marktplatz IT-Lösungen, Nutzung der Lernräume für ehemalige Teilnehmende zum weiteren Austausch</li> 
+  <li>Nutzungsmöglichkeit unseres Lernmanagementsystems für die Entwicklung eigener interner Lerneinheiten durch Ihr eigenes Personal (interessant für Ihre Querschnittsabteilungen wie z.B. Personal, IT, Finanzen/Kasse)</li>
+  <li>Betreuung/Beratung durch unsere Ansprechpartnerin für Kommunen</li>
+  <li>Auf Wunsch Entwicklung neuer Lerneinheiten</li>
+  <li>Interkommunaler Austausch, neue Kontakte und Impulse</li>
+  </ul>"
+  utter_faq/own_lessons:
+  - text: "Auf Wunsch können Sie unser Lernmanagementsystem auch selbst mit eigenen Lerneinheiten bestücken. Dies eignet sich insbesondere für wiederkehrende interne Veranstaltungen wie zum Beispiel EDV-Einführung für neue Beschäftigte, die dann unabhängig von konkreten Terminen und Räumlichkeiten stattfinden können. Der dazugehörige Zeit- und Personalaufwand entfällt ganz oder teilweise – je nachdem, ob Sie Ihre Lerneinheit mit oder ohne Live-Termin planen (also On-Demand oder Hybrid)."
+  utter_faq/development_steps:
+  - text: "<ul>
+  <li>Shopsystem (u.a. mit Freigabeworkflows, Wartelistenfunktion)</li>
+  <li>Online-Tool, mit dem jeder Beschäftigte einen Soll-Ist-Vergleich seiner Kompetenzen durchführen kann und aufgrund der Auswertung eine Empfehlung für seinen individuellen Lernpfad erhält.</li>
+  </ul>"
+  utter_faq/member_obligations:
+  - text: "<ul>
+  <li>Es findet eine jährliche Generalversammlung aller Mitgliedskommunen statt, bei der jedes Mitglied eine Stimme hat. Weitere Informationen können Sie dem  <a target='_blank' href='https://www.gesetze-im-internet.de/bdsg_2018/'>Genossenschaftsgesetz</a> und unserer Satzung (PDF-Link) entnehmen. Weitere Informationen über den Aufsichtsrat, den Vorstand, die Geschäftsstelle und den Fachbeirat erhalten Sie <a target='_blank' href='https://www.kommunalcampus.net/ueber-uns/'>HIER</a>.</li>
+  <li>Wir benötigen eine feste Ansprechperson zur Abstimmung Ihrer Wünsche, Buchungen und organisatorischen Angelegenheiten.</li>
+  <li>Ihre Landingpage wird von Ihnen regelmäßig über Ihre hausinternen Kanäle beworben, um das Angebot bei Ihren Beschäftigten bekannt zu machen.</li>
+  <li>Für eine Teilnahme an einer hybriden Lerneinheit sind für das Live-Tutorium Mikro, Kamera und ein ruhiges Umfeld erforderlich. </li>
+  <li>Um passende Lerneinheiten für Ihre Beschäftigten auszuwählen, sollten Sie sich Gedanken über die Fortbildungsbedarfe bei Ihrem Personal machen. Sie könnten z.B. auch interne Fortbildungsreihen/Lehrgänge teilweise oder vollständig mit On-Demand / hybriden Lerneinheiten virtuell abbilden.</li>
+  </ul>"
+  utter_faq/member_costs:
+  - text: "Ihre Kommunalverwaltung beteiligt sich mit einer Einlage am Genossenschaftskapital. Diese einmalige Einlage wird fällig, sobald Ihre Kommunalverwaltung beitritt. Mit der Einlage erwerben Sie Geschäftsanteile (1 Geschäftsanteil = 1.000 €). Die Anzahl der Geschäftsanteile, die Ihre Kommunalverwaltung zum Beitritt erwirbt, errechnet sich anhand der Anzahl Ihrer Beschäftigten und kann unserer Satzung entnommen werden (siehe hierzu §39 Satzung KommunalCampus eG, Seite 20). Es handelt sich um einen Brutto-Betrag.
+  <ul>
+  <li>1-50 Beschäftigte: 1 Geschäftsanteil</li>
+  <li>51-250 Beschäftigte: 2 Geschäftsanteile </li>
+  <li>251-500 Beschäftigte: 3 Geschäftsanteile </li>
+  <li>501-1000 Beschäftigte: 4 Geschäftsanteile </li>
+  <li>1001-2000 Beschäftigte: 5 Geschäftsanteile</li>
+  <li>>2000 Beschäftigte: 6 Geschäftsanteile</li>
+  </ul>"
+  utter_faq/learning_unit_costs:
+  - text: "Die Lerneinheiten werden entweder nach Teilnahme pro Person oder, falls Sie einen ganzen Kurs exklusiv für Ihr Personal buchen möchten, im Ganzen abgerechnet. Die Teilnahmegebühr ist gestaffelt nach dem jeweiligen Level der Lerneinheit. Alle Preise verstehen sich Netto, zzgl. der gesetzlichen MwSt. von aktuell 19%:
+  <ul>
+  <li> Level 1: 85 €/Person</li>
+  <li> Level 2: 150 €/Person</li>
+  <li> Level 3: 200 €/Person</li>
+  <li> Level 4: 300 €/Person</li>
+  </ul>"
+  utter_faq/book_wo_membership:
+  - text: "Das ist möglich. Zur Teilnahmegebühr wird in diesem Fall ein Zuschlag in Höhe von 20% erhoben."
+  utter_faq/how_member:
+  - text: "Für eine Mitgliedschaft benötigen Sie einen Gremienbeschluss. Sollten Sie bei der Vorlagenerstellung Unterstützung benötigen, sind wir Ihnen gerne behilflich. Sobald der Beschluss gefasst wurde, leiten Sie uns diesen weiterleiten. Dann erhalten Sie von uns ein Beitrittsformular, mit dem Sie Ihren Beitritt beantragen und sich verpflichten, entsprechend der Anzahl Ihrer Genossenschaftsanteile den daraus resultierenden einmaligen Einzahlungsbetrag zu leisten. Wenn uns das Beitrittsformular vorliegt, der Genossenschaftsvorstand Ihrem Beitritt zugestimmt hat und die Einlage geleistet wurde, erhalten Sie eine Bestätigung."
+  utter_faq/oboarding:
+  - text: Um Ihnen den Einstieg und die ersten Schritte zu erleichtern, erhalten Sie von uns einen ausführlichen Fahrplan, der Sie bis hin zu Ihrem Auftakt auf dem Campus unterstützen soll. Parallel steht Ihnen unsere Kollegin Kathleen Schäfer als Ansprechpartnerin zur Seite und begleitet Sie gerne auf jedem Schritt des Wegs. 
+  utter_faq/test_learning_unit:
+  - text: "Ja, hierfür stehen folgende On-Demand-Angebote ohne Live-Tutorium zur Verfügung: 
+    KommunalCampus - kompakt erklärt
+
+    Hierfür steht Ihnen eine Einführung in Kursform zur Verfügung, der Ihnen tiefergehende Informationen über den KommunalCampus vermittelt, während Sie gleichzeitig die Funktionsweise und das Handling der Lernplattform erleben. Sie müssten sich lediglich einmalig auf der Plattform registrieren (<a target='_blank' href='https://lernen.kommunalcampus.de/account/new'>zur Registrierung</a>), könnten sich dann direkt kostenlos in den Kurs 'einschreiben' und loslegen. Leiten Sie diesen Link auch gerne an andere Entscheider:innen in Ihrem Hause weiter, damit Sie sich alle ein umfassendes Bild vom KommunalCampus machen können. 
+
+    <a target='_blank' href='https://lernen.kommunalcampus.de/courses/Z0002_Teaserkurs'>zum Kurs</a>  
+
+      
+
+    Beispiel: Digi-Check
+
+    In Kooperation mit dem Sparkassen-Verlag haben wir einen Kurs mit 5 Modulen entwickelt, in dem jeder sein digitales Wissen erweitern kann. Klicken Sie sich durch die Verwaltungswelt der Sparkasse und lernen Sie die Vorteile der Digitalisierung an anschaulichen Beispielen kennen.  
+
+    <a target='_blank' href='https://lernen.kommunalcampus.de/courses/X0008'>zum Kurs</a>"
+
+  utter_faq/participate_learning_unit:
+  - text: "<ul>
+  <li> <b>Registrierung</b>: Zunächst erstellen Sie sich ein Benutzerprofil und registrieren sich dafür mit Ihrer dienstlichen E-Mailadresse > Erklärvideolink und Link zur Registrierungsseite </li>
+  <li> <b>Lerneinheit finden</b>: Auf der Landingpage Ihrer Kommunalverwaltung sind die für Sie vorausgewählten Lerneinheiten hinterlegt. Wenn Sie eine Lerneinheit anklicken, öffnen sich die Details mit Kursbeschreibung, Angabe zu den Dozenten etc.</li>
+  <li> <b>An einer kostenpflichtigen hybriden Lerneinheit mit Live-Tutorium teilnehmen</b>: klicken Sie in den Kursdetails auf den blauen Button „jetzt anmelden“, dann erfolgt zunächst, je nach Vereinbarung mit Ihrer Kommunalverwaltung, eine Buchungsanfrage bei uns oder Ihrer Kommunalverwaltung. Hybride Lernangebote bestehen aus 3 Teilen: Vorbereitungsmodul im Selbststudium (Umfang ca. 2-4 h), ein Live-Tutorium zu einem festgelegten Termin von 9-13 Uhr, Nachbereitungsmodul im Selbststudium (Umfang ca. 2 h). Wenn in den Kursdetails noch kein Termin für ein Live-Tutorium steht, können Sie sich trotzdem anmelden oder uns Ihre Anfrage per E-Mail an buchung@kommunalcampus.de schicken. Wir setzen Sie dann auf unsere Warteliste und informieren Sie, sobald der nächste Termin feststeht. Sobald Sie Ihren Termin für das Live-Tutorium bekommen, tragen Sie ihn bitte in Ihren Kalender ein. Ihre Teilnahme ist verbindlich und verursacht Kosten für Ihren Arbeitgeber.</li>
+  <li> <b>An einer kostenfreien On-Demand-Lerneinheit teilnehmen</b>: klicken Sie in den Kursdetails auf den blauen Button „für den Kurs einschreiben“, dann können Sie den Kurs direkt starten. On-Demand-Kurse kann man zu jeder Tages- und Nachtzeit, ortsunabhängig starten und durcharbeiten. Sie können sich Ihre Zeit frei einteilen.</li>
+  </ul>"
+  utter_faq/joining_live_tutoring:
+  - text: "<ul>
+  <li>Zwei Wochen vor dem Live-Tutorium wird das Vorbereitungsmodul des Kurses freigeschaltet und die eingeschriebenen Teilnehmenden darüber informiert.</li>
+  <li>Sie benötigen Mikro, Kamera und ein ungestörtes Plätzchen. Auch aus dem Homeoffice können Sie teilnehmen. </li>
+  <li>Führen Sie den Techniktest im Vorbereitungsmodul von dem Platz aus durch, an dem Sie sich zum Termin befinden werden. Daheim können andere lokale Probleme auftreten als im Büro. Führen Sie den Test daher schon einige Tage vor dem Termin durch, damit Sie noch die Chance haben, die Probleme zusammen mit Ihrer hausinternen IT zu beheben. Vermeiden Sie dadurch, dass Sie und Ihre Mitteilnehmenden wertvolle Zeit beim Live-Termin verlieren.</li>
+  <li>Arbeiten Sie das Vorbereitungsmodul sorgfältig und rechtzeitig einige Tage vor dem Live-Tutorium durch. Unvorbereitet in das Live-Tutorium zu gehen, behindert Sie und Ihre Mitteilnehmenden bei den Übungen und wirkt sich letztlich negativ auf Ihren eigenen Lernerfolg und die ganze Gruppe aus.</li>
+  <li>Mit knurrendem Magen lernt es sich schlecht. Frühstücken Sie vor dem Termin ausreichend und halten Sie auf dem Schreibtisch ein Getränk und ggf. einen kleinen Snack für zwischendurch bereit.</li>
+  </ul>"
+  utter_faq/live_tutoring:
+  - text: "Sie gehen entweder über Ihr Profil > Dashboard > Kurs > Modul Live-Tutorium oder über den per E-Mail an Sie versendeten Link auf die virtuelle Plattform des KommunalCampus. Melden Sie sich bitte schon ca. 15-20 Minuten früher an, um sich zu orientieren und “Hallo” zu sagen. Während des Live-Tutoriums, das zu einem festen Termin von 9-13 Uhr in einem virtuellen Gruppenraum stattfindet, wird mittels Kamera und Mikrofon / Headset kommuniziert, Gruppenübungen gemacht und das theoretische Wissen aus dem Vorbereitungsmodul mit Leben gefüllt. Praxisbeispiele und Erfahrungen mit Teilnehmenden aus anderen Behörden und Fachbereichen werden ausgetauscht, was bisher von den Teilnehmenden als sehr gewinnbringend empfunden wurde. Zwischendurch wird auch eine kurze Pause eingelegt."
+  utter_faq/after_live_tutorin:
+  - text: "Zwei Wochen nach dem Live-Tutorium wird das Nachbereitungsmodul freigeschaltet. Ab diesem Zeitpunkt kann man dann ebenfalls im Selbststudium die ergänzenden Inhalte, nützliche Links, kleine Tests etc. durcharbeiten. Hat man alle Module durchgearbeitet, füllt man noch den Evaluationsbogen aus, der als Rückmeldung für unser Qualitätsmanagement dient. Dann kann man die Lerneinheit abschließen und seine Teilnahmebescheinigung ausdrucken/abspeichern."
+  utter_faq/certificate_of_participation:
+  - text: "Sobald Sie alle Inhalte durchgearbeitet haben und die Bescheinigung freigeschaltet wurde, können Sie diese auf Ihrem Profil unter „Teilnahmebescheinigungen“ herunterladen. Dort finden Sie die Bescheinigungen zu allen durchlaufenen Lerneinheiten.
+  Sollte die Bescheinigung nicht aufgeführt sein, kann es daran liegen, dass Sie noch nicht alle Inhalte durchgearbeitet/heruntergeladen haben. Gehen Sie auf die betreffende Lerneinheit und klicken Sie auf „Fortschritt“. Hier wird Ihnen für jedes Modul angezeigt, ob Sie 100 % der Inhalte erreicht haben. Möglicherweise haben Sie einen Inhalt überblättert. Dieser wird Ihnen rechts neben dem Prozentbalken angezeigt, so dass Sie ihn direkt anklicken und durcharbeiten/herunterladen können. Unter den Prozentangaben zu den Modulen ist ganz unten ebenfalls die Teilnahmebescheinigung hinterlegt. Wenn Sie auf das Wort “Teilnahmebescheinigung” klicken, müsste Sie sich öffnen. Laden Sie diese zum Abspeichern und ggf. Ausdrucken herunter."
+  utter_faq/problem:
+  - text: "Sind Sie gerade mit Ihren Benutzerdaten auf der Lernplattform eingeloggt, sehen Sie am rechten Bildrand Ihres Browserfensters ein blaues Kästchen mit dem Wort 'Hilfe'. Wenn Sie es anklicken, öffnet sich ein Kontaktformular. Schildern Sie uns Ihr Problem und versenden Sie die Anfrage. Wir melden uns schnellstmöglich zurück. Sie können aber auch eine E-Mail an <a href='mailto:support@kommunalcampus.de'>support@kommunalcampus.de</a> schicken.
+  <b>Informative Links</b>: 
+  <ul>
+    <li><a target='_blank' href='https://www.youtube.com/watch?v=QGeCAcDGhcE'>Was ist der KommunalCampus? (Erklär-Video)</a> </li>
+    <li><a target='_blank' href='https://lernen.kommunalcampus.de/courses'>Gesamtes Kursangebot des KommunalCampus</a></li>
+    <li><a target='_blank' href='https://www.youtube.com/watch?v=rE0KXIGDhFg'>Wie registriere ich mich auf dem KommunalCampus? (Erklär-Video)</a></li>
+    <li><a target='_blank' href='https://t58cb01a1.emailsys1a.net/15/5499/2091ee3ad5/subscribe/form.html?_g=1648139367'>Newsletter abonnieren</a></li>
+  <ul>"
+  utter_faq/contact:
+  - text: "Kathleen Schäfer: Ansprechpartnerin Kommunen:
+  <ul> 
+  <li> Besuchen Sie mich in unserer virtuellen Geschäftsstelle: Virtuelles Büro Kathleen Schäfer</li>
+  <li>Erreichen Sie mich telefonisch unter: 0621 49098-522 oder</li>
+  <li>Schreiben Sie mir eine E-Mail: kathleen.schaefer@kommunalcampus.de </li>
+  </ul>
+  um ein ausführliches Info-Gespräch zu vereinbaren, für das wir Sie um 3 Terminvorschläge und ca. 60-90 Minuten Ihrer Zeit bitten."
+
+
+
+

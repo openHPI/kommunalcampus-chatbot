@@ -1,0 +1,392 @@
+version: '3.1'
+
+nlu:
+  - intent: faq/which_services
+    examples: |
+      - Welche Leistungen erhalte ich als Mitglied?
+      - Welche Leistungen gibt es als Mitglied?
+      - Welche Vorteile stehen mir als Mitglied zur Verfügung?
+      - Was sind die Leistungen, die ich als Mitglied erhalten kann?
+      - Könnten Sie mir bitte einen Überblick über die Leistungen geben, die ich als Mitglied genießen kann?
+      - Was beinhaltet die Mitgliedschaft in Bezug auf Leistungen und Extras?
+      - Welche besonderen Angebote und Vergünstigungen erwarten mich als Mitglied?
+      - Können Sie mir sagen, was ich als Mitglied alles geboten bekomme?
+      - Welche speziellen Leistungen sind für Mitglieder verfügbar?
+      - Was sind die exklusiven Leistungen, die ich als Mitglied beanspruchen kann?
+      - Gibt es zusätzliche Services oder Annehmlichkeiten, die ich als Mitglied in Anspruch nehmen kann?
+      - Welche Leistungen stehen mir zur Verfügung, wenn ich Teil der Mitgliedschaftsgemeinschaft bin?
+      - Welche Extras und Services erwarten mich als Mitglied?
+      - Was beinhaltet das Leistungspaket für Mitglieder?
+      - Könnten Sie mir bitte die Leistungen auflisten, die ich als Mitglied berechtigt bin zu nutzen?
+      - Welche speziellen Vorteile erhalte ich als Mitglied?
+      - Gibt es besondere Leistungen, die exklusiv für Mitglieder zugänglich sind?
+      - Welche besonderen Privilegien habe ich als Mitglied?
+      - Was sind die konkreten Leistungen, die ich als Mitglied genießen kann?
+      - Welche zusätzlichen Leistungen stehen mir als Mitglied zur Verfügung?
+      - Können Sie mir bitte die umfassenden Leistungen erklären, die ich als Mitglied erhalten werde?
+      - Welche Serviceleistungen sind in meiner Mitgliedschaft enthalten?
+      - Leistungen als Mitglied
+      - Mitgliedsleistungen
+
+  - intent: faq/own_lessons
+    examples: |
+      - Kann meine Kommunalverwaltung das Lernmanagementsystem auch für eigene Lerneinheiten nutzen?
+      - Ist es möglich, dass unsere Kommunalverwaltung das Lernmanagementsystem auch für interne Lerneinheiten verwendet?
+      - Können wir das Lernmanagementsystem der Kommunalverwaltung für unsere eigenen Lernzwecke nutzen?
+      - Ist es erlaubt, dass unsere Kommunalverwaltung das Lernmanagementsystem für interne Schulungen und Lernprogramme einsetzt?
+      - Gibt es die Möglichkeit, dass die Kommunalverwaltung das Lernmanagementsystem für eigene Lerninhalte verwendet?
+      - Können wir als Kommunalverwaltung das Lernmanagementsystem nutzen, um unsere eigenen Lerneinheiten anzubieten?
+      - Ist es gestattet, dass unsere Kommunalverwaltung das Lernmanagementsystem für interne Trainingsmaßnahmen nutzt?
+      - Gibt es eine Option, dass die Kommunalverwaltung das Lernmanagementsystem für eigene Weiterbildungsprogramme einsetzt?
+      - Können wir das Lernmanagementsystem der Kommunalverwaltung für unsere spezifischen Schulungszwecke verwenden?
+      - Ist es vorgesehen, dass die Kommunalverwaltung das Lernmanagementsystem auch intern für Lernaktivitäten nutzt?
+      - Kann unsere Kommunalverwaltung das Lernmanagementsystem für firmeninterne Lerneinheiten in Anspruch nehmen?
+      - Gibt es eine Möglichkeit, dass die Kommunalverwaltung das Lernmanagementsystem für interne Wissensvermittlung nutzt?
+      - Können wir das Lernmanagementsystem der Kommunalverwaltung verwenden, um unsere eigenen Lernmaterialien bereitzustellen?
+      - Ist es erlaubt, dass unsere Kommunalverwaltung das Lernmanagementsystem für die internen Ausbildungsmaßnahmen nutzt?
+      - Gibt es die Option, dass die Kommunalverwaltung das Lernmanagementsystem für firmeninterne Schulungen einsetzt?
+      - Können wir das Lernmanagementsystem der Kommunalverwaltung nutzen, um unsere eigenen Lernmodule anzubieten?
+
+  - intent: faq/development_steps
+    examples: |
+      - Welche weiteren Entwicklungsschritte plant die KommunalCampus eG?
+      - Können Sie mir bitte die geplanten nächsten Schritte für die Weiterentwicklung der KommunalCampus eG nennen?
+      - Welche zukünftigen Entwicklungspläne hat die KommunalCampus eG?
+      - Gibt es konkrete Vorhaben oder Projekte, an denen die KommunalCampus eG in naher Zukunft arbeitet?
+      - Was sind die nächsten Entwicklungsziele der KommunalCampus eG?
+      - Können Sie mir einen Ausblick auf die geplanten Entwicklungsmaßnahmen der KommunalCampus eG geben?
+      - Welche Schritte sind für die Weiterentwicklung der KommunalCampus eG vorgesehen?
+      - Was plant die KommunalCampus eG in Bezug auf ihre zukünftige Entwicklung?
+      - Gibt es spezifische Vorhaben, an denen die KommunalCampus eG arbeitet, um sich weiterzuentwickeln?
+      - Welche neuen Initiativen und Projekte sind für die KommunalCampus eG in Planung?
+      - Können Sie mir bitte einen Überblick über die geplanten Entwicklungsschritte der KommunalCampus eG geben?
+      - Was sind die langfristigen Entwicklungspläne der KommunalCampus eG?
+      - Gibt es bestimmte Bereiche oder Aspekte, auf die sich die zukünftige Entwicklung der KommunalCampus eG konzentrieren wird?
+      - Welche innovativen Ansätze oder Technologien plant die KommunalCampus eG in ihre Entwicklung einzubeziehen?
+      - Können Sie mir bitte mitteilen, welche strategischen Schritte die KommunalCampus eG plant, um sich weiterzuentwickeln?
+      - Welche spezifischen Maßnahmen plant die KommunalCampus eG, um ihr Angebot in Zukunft auszubauen und zu verbessern?
+      - Entwicklungsschritte
+      - nächste Schritte
+      - Entwicklungsplan
+      - Planung für die Zukunft
+
+  - intent: faq/member_obligations
+    examples: |
+      - Welche Verpflichtungen ergeben sich aus einer Mitgliedschaft?
+      - Welche Aufgaben und Verpflichtungen sind mit einer Mitgliedschaft verbunden?
+      - Können Sie mir bitte die damit einhergehenden Verpflichtungen einer Mitgliedschaft erläutern?
+      - Was sind die spezifischen Pflichten, die sich aus einer Mitgliedschaft ergeben?
+      - Welche Verantwortlichkeiten sind mit einer Mitgliedschaft verbunden?
+      - Gibt es bestimmte Verpflichtungen oder Verhaltenskodexe, die Mitglieder einhalten müssen?
+      - Welche konkreten Anforderungen und Verpflichtungen müssen Mitglieder erfüllen?
+      - Welche Verpflichtungen erwartet die Organisation von ihren Mitgliedern?
+      - Können Sie mir bitte die Verpflichtungen und Pflichten auflisten, die mit einer Mitgliedschaft einhergehen?
+      - Welche regelmäßigen oder zusätzlichen Verpflichtungen kommen auf Mitglieder zu?
+      - Was wird von den Mitgliedern erwartet, um ihren Verpflichtungen nachzukommen?
+      - Welche Verpflichtungen müssen Mitglieder erfüllen, um aktiv am Vereinsleben teilzunehmen?
+      - Gibt es bestimmte finanzielle oder zeitliche Verpflichtungen, die mit einer Mitgliedschaft einhergehen?
+      - Welche Verpflichtungen haben Mitglieder, um die Ziele und Interessen der Organisation zu unterstützen?
+      - Können Sie mir bitte erklären, welche Verpflichtungen und Pflichten Mitglieder haben, um ihre Mitgliedschaft aufrechtzuerhalten?
+      - Was sind die grundlegenden Verpflichtungen, die von Mitgliedern erwartet werden, um den Verein zu unterstützen und seine Zwecke zu fördern?
+      - Mitgliedschaftsverpflichtungen
+      - Verpflichtungen in der Mitgliedschaft
+      - Welche Verpflichtungen habe ich als Mitglied?
+      - Welche Verpflichtungen gehe ich mit der Mitgliedschaft ein?
+  
+  - intent: faq/member_costs
+    examples: |
+      - Welche Kosten sind mit der Mitgliedschaft verbunden?
+      - Können Sie mir bitte einen Überblick über die finanziellen Aufwendungen einer Mitgliedschaft geben?
+      - Welche Gebühren oder Beiträge fallen im Rahmen der Mitgliedschaft an?
+      - Was sind die finanziellen Verpflichtungen, die mit einer Mitgliedschaft verbunden sind?
+      - Gibt es konkrete Kosten, die Mitglieder tragen müssen, um Teil der Organisation zu sein?
+      - Welche finanziellen Ausgaben erwarten mich als Mitglied?
+      - Können Sie mir bitte die anfallenden Kosten und Gebühren einer Mitgliedschaft auflisten?
+      - Welche finanziellen Aufwendungen sind erforderlich, um die Mitgliedschaft aufrechtzuerhalten?
+      - Gibt es jährliche oder monatliche Mitgliedsbeiträge, die entrichtet werden müssen?
+      - Welche finanziellen Verpflichtungen kommen auf Mitglieder zu, um alle Leistungen und Vorteile zu erhalten?
+      - Was sind die Kosten, die Mitglieder tragen müssen, um an den Aktivitäten und Veranstaltungen teilzunehmen?
+      - Können Sie mir bitte die finanziellen Aspekte einer Mitgliedschaft erklären, einschließlich etwaiger Zusatzkosten?
+      - Welche finanziellen Aufwendungen sollten Mitglieder im Zusammenhang mit der Mitgliedschaft berücksichtigen?
+      - Gibt es besondere finanzielle Anforderungen oder Beiträge, die mit der Mitgliedschaft verbunden sind?
+      - Können Sie mir bitte erläutern, wie hoch die Kosten für die Mitgliedschaft sind und wie sie bezahlt werden müssen?
+      - Was sind die finanziellen Verpflichtungen, die Mitglieder tragen müssen, um alle Leistungen und Privilegien zu nutzen?
+      - Kosten Mitgliedschaft
+      - Mitgliedschaftskosten
+      - Was kostet eine Mitgliedschaft?
+
+  - intent: faq/learning_unit_costs
+    examples: |
+      - Was kostet die Teilnahme an einer Lerneinheit (für Mitglieder)?
+      - Können Sie mir bitte angeben, wie hoch die Kosten für die Teilnahme an einer Lerneinheit für Mitglieder sind?
+      - Was wird von Mitgliedern für die Teilnahme an einer Lerneinheit finanziell verlangt?
+      - Welche Gebühren fallen für Mitglieder an, die an einer Lerneinheit teilnehmen möchten?
+      - Gibt es spezielle Preise oder Rabatte für Mitglieder, die an Lerneinheiten teilnehmen möchten?
+      - Welche finanziellen Aufwendungen sind mit der Teilnahme an einer Lerneinheit für Mitglieder verbunden?
+      - Können Sie mir bitte die Kostenstruktur für Mitglieder erklären, die an Lerneinheiten teilnehmen wollen?
+      - Welche Gebühren müssen Mitglieder entrichten, um an einer Lerneinheit teilzunehmen?
+      - Gibt es eine Mitgliedschaftsgebühr, die Mitglieder zahlen müssen, um die Teilnahme an Lerneinheiten zu ermöglichen?
+      - Was sind die finanziellen Verpflichtungen von Mitgliedern, die an Lerneinheiten teilnehmen möchten?
+      - Können Sie mir bitte mitteilen, wie viel es Mitglieder kostet, an einer Lerneinheit teilzunehmen?
+      - Welche Kosten müssen Mitglieder tragen, um von den Lerneinheiten zu profitieren?
+      - Gibt es spezielle Preisstrukturen oder Vergünstigungen für Mitglieder, die an Lerneinheiten teilnehmen möchten?
+      - Können Sie mir bitte die Preise für Mitglieder nennen, um an einer Lerneinheit teilnehmen zu können?
+      - Welche finanziellen Aufwendungen sollten Mitglieder einkalkulieren, um an Lerneinheiten teilzunehmen?
+      - Was sind die Teilnahmegebühren, die Mitglieder für die Teilnahme an Lerneinheiten bezahlen müssen?
+      - Kosten Lerneinheit
+      - Lerneinheitskosten
+      - Was kostet eine Lerneinheit?
+      - Teilnahmegebühren Lerneinheit
+
+  - intent: faq/book_wo_membership
+    examples: |
+      - Kann ich auch ohne Mitgliedschaft meiner Kommunalverwaltung Lerneinheiten buchen?
+      - Ist es möglich, Lerneinheiten auch ohne Mitgliedschaft bei meiner Kommunalverwaltung zu buchen?
+      - Können Nicht-Mitglieder der Kommunalverwaltung ebenfalls Lerneinheiten buchen?
+      - Gibt es die Option, Lerneinheiten zu buchen, auch wenn ich keine Mitgliedschaft bei meiner Kommunalverwaltung habe?
+      - Ist es erlaubt, dass Personen, die nicht Mitglied meiner Kommunalverwaltung sind, Lerneinheiten buchen?
+      - Kann ich als Nicht-Mitglied meiner Kommunalverwaltung dennoch an Lerneinheiten teilnehmen?
+      - Gibt es die Möglichkeit, dass auch Personen ohne Mitgliedschaft bei meiner Kommunalverwaltung Lerneinheiten buchen können?
+      - Können externe Personen ohne Mitgliedschaft bei meiner Kommunalverwaltung Lerneinheiten in Anspruch nehmen?
+      - Ist es gestattet, dass Nicht-Mitglieder der Kommunalverwaltung Lerneinheiten buchen?
+      - Gibt es eine Option, dass auch Personen ohne Mitgliedschaft bei meiner Kommunalverwaltung an den Lerneinheiten teilnehmen können?
+      - Kann ich Lerneinheiten auch dann buchen, wenn ich keine Mitgliedschaft bei meiner Kommunalverwaltung habe?
+      - Ist es möglich, als externe Person ohne Mitgliedschaft bei meiner Kommunalverwaltung an den Lerneinheiten teilzunehmen?
+      - Können Personen, die keine Mitglieder meiner Kommunalverwaltung sind, dennoch Lerneinheiten buchen?
+      - Gibt es eine Regelung, dass auch Nicht-Mitglieder meiner Kommunalverwaltung Lerneinheiten nutzen können?
+      - Kann ich als Nicht-Mitglied meiner Kommunalverwaltung die Lerneinheiten gegen Gebühr buchen?
+      - Ist es auch Personen ohne Mitgliedschaft bei meiner Kommunalverwaltung gestattet, Lerneinheiten zu buchen?
+      - Ist es möglich ohne Mitgliedschaft eine Lerneinheit zu buchen?
+      - Lerneinheit ohne Mitgliedschaft buchen
+  
+  - intent: faq/how_member
+    examples: |
+      - Wie kann meine Kommunalverwaltung Mitglied werden?
+      - Welche Schritte sind erforderlich, damit meine Kommunalverwaltung Mitglied werden kann?
+      - Wie kann meine Kommunalverwaltung den Prozess der Mitgliedschaft beantragen?
+      - Welche Voraussetzungen muss meine Kommunalverwaltung erfüllen, um Mitglied zu werden?
+      - Können Sie mir bitte den Ablauf erklären, wie meine Kommunalverwaltung Mitglied werden kann?
+      - Was ist der genaue Prozess, den meine Kommunalverwaltung durchlaufen muss, um Mitglied zu werden?
+      - Welche Informationen oder Unterlagen benötigt meine Kommunalverwaltung, um Mitglied zu werden?
+      - Gibt es bestimmte Anforderungen, die meine Kommunalverwaltung erfüllen muss, um Mitglied zu werden?
+      - Können Sie mir bitte die erforderlichen Schritte nennen, damit meine Kommunalverwaltung Mitglied werden kann?
+      - Welche Formalitäten sind erforderlich, damit meine Kommunalverwaltung Teil der Mitgliedschaft wird?
+      - Was ist der empfohlene Ansprechpartner oder die Kontaktperson, um den Beitrittsprozess für meine Kommunalverwaltung einzuleiten?
+      - Gibt es einen spezifischen Antragsprozess, den meine Kommunalverwaltung abschließen muss, um Mitglied zu werden?
+      - Können Sie mir bitte erläutern, wie meine Kommunalverwaltung den Mitgliedschaftsantrag stellen kann?
+      - Welche Schritte oder Dokumente sind erforderlich, damit meine Kommunalverwaltung erfolgreich Mitglied wird?
+      - Gibt es eine bestimmte Frist oder ein Aufnahmeverfahren, das meine Kommunalverwaltung befolgen muss, um Mitglied zu werden?
+      - Wie kann meine Kommunalverwaltung offiziell in die Mitgliedschaft aufgenommen werden?
+      - Mitgliedschaft Kommunalverwaltung
+
+  - intent: faq/oboarding
+    examples: |
+      - Was sind die ersten Schritte bei einer Mitgliedschaft?
+      - Wie läuft das Onboarding ab?
+      - Können Sie mir bitte die ersten Schritte erklären, die bei einer Mitgliedschaft durchlaufen werden müssen?
+      - Was sind die initialen Schritte, die bei einer Mitgliedschaft anstehen, und wie läuft das Onboarding ab?
+      - Welche Schritte muss ich als neues Mitglied durchlaufen, um erfolgreich in die Organisation integriert zu werden?
+      - Können Sie mir bitte den Ablauf des Onboardings für neue Mitglieder genauer erläutern?
+      - Was erwartet mich als neues Mitglied in Bezug auf den Einstiegsprozess und die ersten Schritte?
+      - Welche Informationen oder Unterlagen werden benötigt, um den Eintritt in die Mitgliedschaft zu erleichtern?
+      - Gibt es ein spezifisches Onboarding-Programm oder eine Einführungsveranstaltung für neue Mitglieder?
+      - Können Sie mir bitte die Schritte erklären, die neue Mitglieder während des Onboardings durchlaufen müssen?
+      - Was sind die typischen Maßnahmen, um neue Mitglieder in die Organisation zu integrieren?
+      - Welche Ressourcen oder Unterstützung werden neuen Mitgliedern angeboten, um ihnen den Einstieg zu erleichtern?
+      - Gibt es ein Mentoring- oder Begleitprogramm für neue Mitglieder, um ihnen bei den ersten Schritten zu helfen?
+      - Können Sie mir bitte die Prozesse und Hilfestellungen beschreiben, die zur Verfügung stehen, um das Onboarding für neue Mitglieder zu erleichtern?
+      - Welche Aktivitäten oder Schulungen werden in der Anfangsphase einer Mitgliedschaft angeboten, um neue Mitglieder zu unterstützen?
+      - Gibt es spezifische Orientierungsveranstaltungen oder Materialien, die neuen Mitgliedern den Einstieg erleichtern?
+      - Wie wird sicherzustellen, dass neue Mitglieder über die wichtigsten Informationen und Ressourcen informiert sind und sich in die Gemeinschaft integrieren können?
+      - Wie funktioniert das oboarding?
+      - Was sind die ersten Schritte?
+      - erste Schritte
+      - Onboarding
+
+  - intent: faq/test_learning_unit
+    examples: |
+      - Können wir unverbindlich eine Lerneinheit ausprobieren?
+      - Kann ich unverbindlich eine Lerneinheit ausprobieren?
+      - Ist es möglich, eine Lerneinheit unverbindlich zu testen?
+      - Kann ich eine Lerneinheit ausprobieren, ohne mich direkt verpflichten zu müssen?
+      - Gibt es eine Option, eine Lerneinheit unverbindlich zu testen, um zu sehen, ob sie meinen Bedürfnissen entspricht?
+      - Können interessierte Personen eine Lerneinheit in einem unverbindlichen Probeformat erleben?
+      - Ist es gestattet, dass ich eine Lerneinheit probeweise und ohne Verpflichtungen besuche?
+      - Gibt es die Möglichkeit, eine Lerneinheit kostenfrei oder zu einem reduzierten Preis auszuprobieren?
+      - Kann ich unverbindlich an einer Lerneinheit teilnehmen, um festzustellen, ob sie meinen Erwartungen entspricht?
+      - Ist es erlaubt, dass ich eine Lerneinheit vorab unverbindlich testen kann, um einen Eindruck davon zu gewinnen?
+      - Gibt es eine Probephase oder ein Probeangebot, um eine Lerneinheit auszuprobieren?
+      - Können Interessierte eine Lerneinheit kostenfrei oder gegen eine geringe Gebühr testen, bevor sie sich für eine vollständige Teilnahme entscheiden?
+      - Ist es möglich, vor einer verbindlichen Buchung eine unverbindliche Schnuppereinheit einer Lerneinheit zu absolvieren?
+      - Kann ich eine Lerneinheit testen, ohne mich vorab für eine feste Teilnahme verpflichten zu müssen?
+      - Gibt es eine Testmöglichkeit, um unverbindlich in eine Lerneinheit hineinzuschnuppern?
+      - Können Interessierte eine Lerneinheit in einer unverbindlichen Probestunde kennenlernen?
+      - Ist es gestattet, dass ich eine Lerneinheit unverbindlich ausprobiere, um festzustellen, ob sie meinen Erwartungen und Bedürfnissen entspricht?
+      - Lerneinheit ausprobieren
+      - Lerneinheit testen 
+      - Test-Lerneinheit
+  
+  - intent: faq/participate_learning_unit
+    examples: |
+      - Wie nimmt man an einer Lerneinheit teil?
+      - Können Sie mir bitte den Ablauf erklären, wie man an einer Lerneinheit teilnimmt?
+      - Was sind die Schritte, um an einer Lerneinheit teilzunehmen?
+      - Wie kann man sich für eine Lerneinheit anmelden oder registrieren?
+      - Können Sie mir bitte erklären, wie die Teilnahme an einer Lerneinheit organisiert ist?
+      - Was muss man tun, um an einer Lerneinheit teilnehmen zu können?
+      - Gibt es eine bestimmte Anmeldeprozedur, um an einer Lerneinheit teilzunehmen?
+      - Wie erfolgt die Anmeldung oder Buchung für eine Lerneinheit?
+      - Welche Informationen oder Unterlagen werden benötigt, um an einer Lerneinheit teilzunehmen?
+      - Können Sie mir bitte den Prozess erklären, wie man sich für eine Lerneinheit einschreibt?
+      - Was sind die Voraussetzungen, um an einer Lerneinheit teilnehmen zu können?
+      - Wie kann man sich für bestimmte Lerneinheiten oder Kurse einschreiben?
+      - Gibt es eine bestimmte Plattform oder ein System, über das man sich für Lerneinheiten anmelden kann?
+      - Können Sie mir bitte erklären, wie die Teilnahmebestätigung und weitere Informationen zu einer Lerneinheit übermittelt werden?
+      - Welche Schritte sind erforderlich, um vor Ort oder online an einer Lerneinheit teilzunehmen?
+      - Was sind die nächsten Schritte, nachdem man sich für eine Lerneinheit angemeldet hat, um tatsächlich daran teilzunehmen?
+
+  - intent: faq/joining_live_tutoring
+    examples: |
+      - Was muss ich vor der Teilnahme an einem Live-Tutorium beachten?
+      - Können Sie mir bitte die wichtigsten Punkte nennen, die ich vor der Teilnahme an einem Live-Tutorium beachten sollte?
+      - Was sind die wesentlichen Dinge, die ich vor der Teilnahme an einem Live-Tutorium berücksichtigen muss?
+      - Gibt es bestimmte Vorbereitungen oder Empfehlungen, die ich vor der Teilnahme an einem Live-Tutorium beachten sollte?
+      - Welche Aspekte sollte ich vor der Teilnahme an einem Live-Tutorium in Betracht ziehen?
+      - Können Sie mir bitte erklären, welche Vorkehrungen ich treffen sollte, bevor ich an einem Live-Tutorium teilnehme?
+      - Was sind die wichtigen Informationen oder Richtlinien, die ich vor der Teilnahme an einem Live-Tutorium kennen sollte?
+      - Gibt es spezifische Anforderungen oder technische Voraussetzungen, die ich vor der Teilnahme an einem Live-Tutorium erfüllen muss?
+      - Können Sie mir bitte mitteilen, was ich vor der Teilnahme an einem Live-Tutorium vorbereiten oder überprüfen sollte?
+      - Welche Etikette-Regeln oder Verhaltensweisen sollte ich vor der Teilnahme an einem Live-Tutorium beachten?
+      - Gibt es Informationen oder Materialien, die ich vorab lesen oder studieren sollte, um mich auf das Live-Tutorium vorzubereiten?
+      - Können Sie mir bitte erklären, wie ich mich technisch auf ein Live-Tutorium vorbereiten sollte?
+      - Was sind die grundlegenden Schritte oder Empfehlungen, die ich vor der Teilnahme an einem Live-Tutorium beachten sollte?
+      - Welche Fragen oder Unklarheiten sollte ich vor der Teilnahme an einem Live-Tutorium klären?
+      - Können Sie mir bitte die wichtigsten Dos and Don'ts vor der Teilnahme an einem Live-Tutorium nennen?
+      - Was sollte ich vor der Teilnahme an einem Live-Tutorium organisatorisch oder logistisch beachten?
+      - Teilnahme an Live-Tutorium
+      - Teilnahme an Tutorium
+
+  - intent: faq/live_tutoring
+    examples: |
+      - Wie kann man sich ein Live-Tutorium vorstellen?
+      - Können Sie mir bitte eine Beschreibung geben, wie ein Live-Tutorium abläuft?
+      - Wie sieht der typische Ablauf eines Live-Tutoriums aus?
+      - Können Sie mir bitte erklären, wie man sich den Ablauf eines Live-Tutoriums vorstellen kann?
+      - Was erwartet mich in einem Live-Tutorium und wie läuft es ab?
+      - Können Sie mir bitte den Modus operandi eines Live-Tutoriums näher erläutern?
+      - Wie funktioniert ein Live-Tutorium in der Praxis?
+      - Können Sie mir bitte eine Vorstellung davon geben, wie eine Live-Tutoriumssitzung aussieht?
+      - Was passiert genau während eines Live-Tutoriums und wie läuft es ab?
+      - Können Sie mir den Rahmen und die Struktur eines Live-Tutoriums beschreiben?
+      - Wie sieht eine typische Interaktion oder Kommunikation während eines Live-Tutoriums aus?
+      - Können Sie mir bitte den Aufbau eines Live-Tutoriums näher erläutern?
+      - Was kann ich von einem Live-Tutorium in Bezug auf den Inhalt und die Interaktion erwarten?
+      - Können Sie mir bitte eine Vorstellung davon geben, wie ein Live-Tutorium gestaltet ist und wie die Inhalte vermittelt werden?
+      - Wie läuft die Kommunikation zwischen Teilnehmern und Tutor in einem Live-Tutorium ab?
+      - Können Sie mir bitte den typischen Ablauf einer Live-Tutoriumssitzung skizzieren?
+      - Was ist ein Live-Tutorium?
+      - Live-Tutorium
+
+  - intent: faq/after_live_tutorin
+    examples: |
+      - Wie geht es nach dem Live-Tutorium weiter?
+      - Was sind die nächsten Schritte oder Aktivitäten nach Abschluss des Live-Tutoriums?
+      - Wie setzt sich der Lernprozess fort, nachdem das Live-Tutorium beendet ist?
+      - Können Sie mir bitte den weiteren Verlauf oder die Nachbereitung nach dem Live-Tutorium erklären?
+      - Was passiert nach dem Live-Tutorium in Bezug auf den Lernfortschritt oder die Aufgabenstellung?
+      - Können Sie mir bitte den Prozess erklären, der nach dem Live-Tutorium folgt?
+      - Welche Aufgaben oder Hausaufgaben können nach dem Live-Tutorium gestellt werden?
+      - Können Sie mir bitte erklären, wie der Support oder die Betreuung nach dem Live-Tutorium gewährleistet wird?
+      - Was sind die nächsten Schritte, um das im Live-Tutorium Gelernte anzuwenden oder zu vertiefen?
+      - Können Sie mir bitte den Nachbetreuungsprozess oder die weiteren Unterstützungsmaßnahmen nach dem Live-Tutorium erläutern?
+      - Was können die Teilnehmer nach dem Live-Tutorium tun, um das Gelernte zu festigen oder weiterzuentwickeln?
+      - Können Sie mir bitte den Follow-up-Prozess nach dem Live-Tutorium beschreiben?
+      - Was können die Teilnehmer nach dem Live-Tutorium erwarten, in Bezug auf Feedback oder weitere Ressourcen?
+      - Können Sie mir bitte den Fortschritt oder die Weiterentwicklung nach dem Live-Tutorium skizzieren?
+      - Was sind die nächsten Schritte, um das im Live-Tutorium behandelte Thema zu vertiefen oder anzuwenden?
+      - Können Sie mir bitte den Plan oder die Empfehlungen für die individuelle Weiterarbeit nach dem Live-Tutorium geben?
+
+  - intent: faq/certificate_of_participation
+    examples: |
+      - Wie erhalte ich meine Teilnahmebescheinigung?
+      - Können Sie mir bitte erklären, wie ich meine Teilnahmebescheinigung erhalten kann?
+      - Wie erfolgt die Ausstellung und Übermittlung der Teilnahmebescheinigung?
+      - Was muss ich tun, um meine Teilnahmebescheinigung zu erhalten?
+      - Können Sie mir bitte den genauen Prozess erklären, um meine Teilnahmebescheinigung zu erhalten?
+      - Gibt es einen bestimmten Antrag oder eine Vorgehensweise, um meine Teilnahmebescheinigung anzufordern?
+      - Wie und wann erhalte ich meine Teilnahmebescheinigung nach Abschluss der Lerneinheit?
+      - Können Sie mir bitte die Informationen nennen, die ich bereitstellen muss, um meine Teilnahmebescheinigung zu erhalten?
+      - Welche Schritte oder Formalitäten sind erforderlich, um meine Teilnahmebescheinigung zu erhalten?
+      - Können Sie mir bitte den Zeitrahmen erklären, innerhalb dessen ich meine Teilnahmebescheinigung erwarten kann?
+      - Was ist der übliche Weg, um meine Teilnahmebescheinigung nach Abschluss der Lerneinheit zu erhalten?
+      - Können Sie mir bitte den Zustellungsprozess oder die Versandmethode für meine Teilnahmebescheinigung erläutern?
+      - Welche Angaben oder Informationen werden auf meiner Teilnahmebescheinigung enthalten sein?
+      - Können Sie mir bitte erklären, wer für die Ausstellung und Freigabe meiner Teilnahmebescheinigung verantwortlich ist?
+      - Gibt es eine spezifische Anforderung oder Frist, um meine Teilnahmebescheinigung zu beantragen?
+      - Können Sie mir bitte den genauen Schritt-für-Schritt-Prozess erklären, um meine Teilnahmebescheinigung zu erhalten?
+      - Teilnahmebescheinigung
+      - Certificate of Participation
+
+  - intent: faq/problem
+    examples: |
+      - Ich bin bereits auf der Lernplattform registriert und habe eine Frage zu / ein Problem mit der Funktionsweise der Lernplattform – wo kann ich mich hinwenden?
+      - Ich habe eine Frage zur der Lernplattform
+      - Ich habe ein Problem mit der Funktionsweise der Plattform
+      - ich habe ein Problem 
+      - Ich habe eine Frage zur Plattform 
+      - Ich habe eine Frage zum kommunalcampus
+      - Ich bin bereits registriert und habe eine Frage oder ein Problem bezüglich der Funktionsweise der Lernplattform. An wen kann ich mich wenden?
+      - Wo finde ich Unterstützung oder Hilfe, wenn ich Fragen oder Probleme mit der Funktionsweise der Lernplattform habe und bereits registriert bin?
+      - An wen kann ich mich wenden, wenn ich als registrierter Benutzer Fragen zur Funktionsweise der Lernplattform habe?
+      - Ich habe Fragen oder Schwierigkeiten mit der Funktionsweise der Plattform. An wen kann ich mich wenden, um Unterstützung zu erhalten?
+      - Wer ist mein Ansprechpartner, wenn ich als registrierter Benutzer Fragen zur Lernplattform habe?
+      - Wo finde ich Hilfestellung oder Support, wenn ich Probleme mit der Funktionsweise der Plattform habe?
+      - An wen kann ich mich wenden, wenn ich registriert bin und Fragen zur Plattform habe?
+      - Wer ist zuständig, wenn ich als registrierter Benutzer Probleme mit der Plattform habe und Unterstützung benötige?
+      - Ich habe Fragen oder Unklarheiten zur Lernplattform. Wo finde ich Hilfe, wenn ich bereits registriert bin?
+      - An wen kann ich mich wenden, wenn ich als registrierter Benutzer Fragen zur Nutzung der Plattform habe?
+      - Ich habe Probleme mit der Funktionsweise der Plattform. Wo kann ich Hilfe erhalten?
+      - Wer steht mir zur Verfügung, wenn ich Fragen zur Plattform habe und bereits registriert bin?
+      - Ich habe Fragen oder Schwierigkeiten mit der Lernplattform. Wo finde ich Unterstützung, um mein Problem zu lösen?
+      - An wen kann ich mich wenden, wenn ich Fragen zur Plattform habe und bereits registriert bin?
+      - Ich habe eine Frage zur KommunalCampus-Plattform. Wo finde ich Hilfe oder Unterstützung, um meine Frage zu klären?
+      - Wo finde ich Hilfe oder Unterstützung?
+      - Wer kann mir bei meinem Problem helfen?
+      - Ich habe eine Unklarheit
+      - Mir ist etwas unklar
+      - Frage
+      - Problem
+      - Ansprechpartner
+      - Schwierigkeit
+
+  - intent: faq/contact
+    examples: |
+      - Ich habe Interesse am KommunalCampus – wie nehme ich Kontakt auf?
+      - Wie nehme ich Kontakt auf?
+      - Wir haben Interesse am KommunalCampus – wie nehmen wir Kontakt auf?
+      - Wir haben Interesse
+      - Interesse
+      - Kontakt
+      - Ich habe interesse am kommunalcampus
+      - Ich bin interessiert
+      - Ich interessiere mich für den KommunalCampus. Wie kann ich Kontakt aufnehmen?
+      - Wie kann ich am besten Kontakt zum KommunalCampus aufnehmen, wenn ich Interesse habe?
+      - Welche Möglichkeiten gibt es, um mit dem KommunalCampus in Kontakt zu treten, wenn ich Interesse habe?
+      - An wen kann ich mich wenden, wenn ich Interesse am KommunalCampus habe und Kontakt aufnehmen möchte?
+      - Wie nehme ich Kontakt mit dem KommunalCampus auf, wenn ich Interesse an einer Zusammenarbeit habe?
+      - Wir als Organisation haben Interesse am KommunalCampus. Wie können wir Kontakt aufnehmen?
+      - Welche Kontaktoptionen stehen zur Verfügung, wenn wir als Organisation am KommunalCampus interessiert sind?
+      - Ich habe Interesse am KommunalCampus und möchte gerne wissen, wie ich am besten Kontakt aufnehmen kann.
+      - Wie kann ich als Einzelperson Kontakt zum KommunalCampus aufnehmen, wenn ich Interesse habe?
+      - Wir sind an einer Zusammenarbeit mit dem KommunalCampus interessiert. Wie können wir Kontakt aufnehmen?
+      - Ich habe Interesse am KommunalCampus. Wie kann ich Informationen anfordern oder Kontakt aufnehmen?
+      - Welche Schritte muss ich unternehmen, um mit dem KommunalCampus in Kontakt zu treten, wenn ich Interesse habe?
+      - Wie kann ich das KommunalCampus-Team kontaktieren, wenn ich Interesse an den angebotenen Leistungen habe?
+      - Wir möchten gerne weitere Informationen zum KommunalCampus erhalten. Wie können wir Kontakt aufnehmen?
+      - Wie kann ich Kontakt zum KommunalCampus aufnehmen, um mein Interesse zu bekunden und Fragen zu stellen?
+
+  
+
+
+
+
