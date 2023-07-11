@@ -10,11 +10,11 @@ services:
         - "12345:5005"
         # Server Port: 12345:5005
         # Local Port: 5005:5005
-    action_server:
-      build: 
-        context: ./rasa/kommunalcampus-de/actions
-      volumes:
-        - ./rasa/kommunalcampus-de/actions:/app/actions
-        - ./rasa/kommunalcampus-de/data:/app/data
-      ports:
-        - 5055:5055
+    # action_server:
+    #   build: 
+    #     context: ./rasa/kommunalcampus-de/actions
+    #   volumes:
+    #     - ./rasa/kommunalcampus-de/actions:/app/actions
+    #     - ./rasa/kommunalcampus-de/data:/app/data
+    #   ports:
+    #     - 5055:5055
